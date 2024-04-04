@@ -1,0 +1,31 @@
+{
+    "type": "containerSimple",
+    "prps": {
+        "singlePage": true,
+        "backgroundColor": "lightGrey",
+        "mainAxisAlign": "center",
+        "crossAxisAlign": "center",
+        "gap": "24px"
+    },
+    "wgts": [
+        {
+            "traits": [
+                {
+                    "trait": "title",
+                    "traitPrps": {
+                        "title": "Opus UI Example Application",
+                        "color": "darkRed"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "clicker",
+            "prps": {
+                "topText": "Click me",
+                "bottomText": "You have clicked %1 time(s)",
+                "color": "darkBlue"
+            }
+        }
+    ]
+}

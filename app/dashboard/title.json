@@ -1,0 +1,21 @@
+{
+	"acceptPrps": {
+		"title": {
+			"type": "string",
+			"desc": "The title string",
+			"dft": ""
+		},
+		"color": {
+			"type": "string",
+			"desc": "The color of the title",
+			"dft": "black"
+		}
+
+	},
+	"type": "label",
+	"prps": {
+		"cpt": "%title%",
+		"color": "%color%",
+		"fontSize": "32px"
+	}
+}
