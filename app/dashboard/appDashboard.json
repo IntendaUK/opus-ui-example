@@ -13,8 +13,7 @@
                 {
                     "trait": "title",
                     "traitPrps": {
-                        "title": "Opus UI Example Application",
-                        "color": "darkRed"
+                        "title": "Opus UI Example Application"
                     }
                 }
             ]
