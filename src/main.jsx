@@ -1,17 +1,22 @@
 //Opus
 import { loadApp, registerComponentTypes } from '@intenda/opus-ui';
 
-//Component Libraries
-import '@intenda/opus-ui-components';
-
 //Custom Components
+import Title from './components/title';
 import Clicker from './components/clicker';
 import propsClicker from './components/clicker/props';
+import propsTitle from './components/title/props';
 
 //Styles
 import './main.css';
 
 //Custom Component Registration
+registerComponentTypes([{
+	type: 'title',
+	component: Title,
+	propSpec: propsTitle
+}]);
+
 registerComponentTypes([{
 	type: 'clicker',
 	component: Clicker,

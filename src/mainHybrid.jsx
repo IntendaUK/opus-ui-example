@@ -4,9 +4,6 @@ import { createRoot } from 'react-dom/client';
 //Opus
 import Opus, { registerComponentTypes, Component } from '@intenda/opus-ui';
 
-//Component Libraries
-import '@intenda/opus-ui-components';
-
 //Custom Components
 import Clicker from './components/clicker';
 import propsClicker from './components/clicker/props';
@@ -32,7 +29,9 @@ const Title = () => {
 		}}>
 			<span style={{
 				fontSize: '32px'
-			}}>Opus UI Example Application</span>
+			}}>
+				Opus UI Example Application
+			</span>
 			<Component mda={{
 				type: 'clicker',
 				prps: {
