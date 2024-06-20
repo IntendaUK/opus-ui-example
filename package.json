@@ -1,7 +1,7 @@
 {
 	"name": "@intenda/opus-ui-example",
 	"description": "An Opus UI example application",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"keywords": [
 		"opus-ui",
 		"example",
@@ -14,7 +14,7 @@
 		"build": "vite build"
 	},
 	"dependencies": {
-		"@intenda/opus-ui": "^1.1.8",
+		"@intenda/opus-ui": "^1.2.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
