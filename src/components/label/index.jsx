@@ -1,15 +1,15 @@
 import './styles.css'
 
-const Title = ({ id, classNames, style, state: { cpt } }) => {
+const Label = ({ id, classNames, style, state: { caption } }) => {
 	return (
 		<div
 			key={id}
 			className={classNames}
 			style={style}
 		>
-			{cpt}
+			{caption}
 		</div>
 	);
 };
 
-export default Title;
+export default Label;

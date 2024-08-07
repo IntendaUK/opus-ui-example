@@ -1,6 +1,6 @@
 # Opus UI Example Application
 
-This project serves as an example of ow to build an Opus UI application. 
+This project serves as an example of how to build an Opus UI application. 
 
 ## Getting started
 1. Clone this repository

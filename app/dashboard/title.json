@@ -5,8 +5,10 @@
 			"desc": "The title string"
 		}
 	},
-	"type": "title",
+	"type": "label",
 	"prps": {
-		"cpt": "%title%"
+		"caption": "%title%",
+		"fontSize": "32px",
+		"color": "themeRed"
 	}
 }

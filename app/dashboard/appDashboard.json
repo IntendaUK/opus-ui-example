@@ -2,7 +2,7 @@
     "type": "containerSimple",
     "prps": {
         "singlePage": true,
-        "backgroundColor": "lightGrey",
+        "backgroundColor": "themeBackground",
         "mainAxisAlign": "center",
         "crossAxisAlign": "center",
         "gap": "24px"
@@ -23,7 +23,17 @@
             "prps": {
                 "topText": "Click me",
                 "bottomText": "You have clicked %1 time(s)",
-                "color": "darkBlue"
+                "color": "{theme.colors.themeWhite}"
+            }
+        },
+        {
+            "type": "label",
+            "prps": {
+                "caption": "App Mode: {theme.system.appMode}",
+                "position": "absolute",
+                "right": "mediumPadding",
+                "bottom": "mediumPadding",
+                "color": "themeTeal"
             }
         }
     ]
