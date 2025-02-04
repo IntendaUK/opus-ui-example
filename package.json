@@ -1,14 +1,14 @@
 {
 	"name": "@intenda/opus-ui-example",
 	"description": "An Opus UI example application",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"keywords": [
 		"opus-ui",
 		"example",
 		"opus"
 	],
 	"scripts": {
-		"start": "concurrently --kill-others \"npm run dev -- --host\" \"nodemon node_modules/@intenda/opus-ui-packager/src/packager.js\"",
+		"start": "concurrently --kill-others \"nodemon node_modules/@intenda/opus-ui-packager/src/packager.js --includePaths=true\" \"npm run dev -- --host\"",
 		"dev": "vite --port 3000",
 		"build-json": "node node_modules/@intenda/opus-ui-packager/src/packager.js",
 		"build": "vite build"
@@ -20,6 +20,7 @@
 	},
 	"devDependencies": {
 		"@intenda/opus-ui-packager": ">=1.0.0 < 2.0.0",
+		"@intenda/vite-plugin-opus-hot-reload": ">=1.0.0 < 2.0.0",
 		"@types/react": "^18.2.43",
 		"@types/react-dom": "^18.2.17",
 		"@vitejs/plugin-react": "^4.2.1",

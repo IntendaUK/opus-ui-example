@@ -7,6 +7,9 @@ import propsLabel from './components/label/props';
 import Clicker from './components/clicker';
 import propsClicker from './components/clicker/props';
 
+//Plugins
+import '@intenda/vite-plugin-opus-hot-reload/src/hotReload';
+
 //Styles
 import './main.css';
 
@@ -26,10 +29,12 @@ registerComponentTypes([{
 	const res = await fetch('/app.json')
 	const mdaPackage = await res.json();
 
+	const env = import.meta.env.VITE_APP_MODE;
+
 	loadApp({
 		mdaPackage,
 		config: {
-			env: 'development'
+			env
 		}
 	});
 })();

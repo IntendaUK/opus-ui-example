@@ -7,6 +7,9 @@ This project serves as an example of how to build an Opus UI application.
 2. `npm i`
 3. `npm start`
 
+## Hot Reload
+Modifying JSON files while the application is open will cause relevant components to be re-mounted.
+
 ## Pure vs Hybrid
 By default, this example application renders a [pure Opus UI application](#pure-applications).
 
