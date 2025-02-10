@@ -6,7 +6,7 @@ const onClick = ({ setState, state: { count } }) => {
 	setState({ count: count + 1 });
 };
 
-const Clicker = ({ id, classNames, style, getHandler, state: { topText, bottomText, count } }) => {
+const CustomComponent = ({ id, classNames, style, getHandler, state: { topText, bottomText, count } }) => {
 	const handlerOnClick = getHandler(onClick);
 
 	const useBottomText = useMemo(() => bottomText.replaceAll('%1', count), [bottomText, count]);
@@ -24,4 +24,4 @@ const Clicker = ({ id, classNames, style, getHandler, state: { topText, bottomTe
 	);
 };
 
-export default Clicker;
+export default CustomComponent;

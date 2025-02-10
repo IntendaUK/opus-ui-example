@@ -4,36 +4,15 @@
         "singlePage": true,
         "backgroundColor": "themeBackground",
         "mainAxisAlign": "center",
-        "crossAxisAlign": "center",
-        "gap": "24px"
+        "crossAxisAlign": "center"
     },
     "wgts": [
         {
-            "traits": [
-                {
-                    "trait": "title",
-                    "traitPrps": {
-                        "title": "Opus UI Example Application"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "clicker",
+            "type": "customComponent",
             "prps": {
-                "topText": "Click me",
-                "bottomText": "You have clicked %1 time(s)",
+                "topText": "Opus UI Example Application",
+                "bottomText": "You have clicked this component %1 time(s)",
                 "color": "{theme.colors.themeWhite}"
-            }
-        },
-        {
-            "type": "label",
-            "prps": {
-                "caption": "App Mode: {theme.system.appMode}",
-                "position": "absolute",
-                "right": "mediumPadding",
-                "bottom": "mediumPadding",
-                "color": "themeTeal"
             }
         }
     ]

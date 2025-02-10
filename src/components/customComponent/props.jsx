@@ -8,7 +8,7 @@ const props = {
 	topText: {
 		type: 'string',
 		desc: 'The top text of the clicker component',
-		dft: 'Clicker'
+		dft: 'Custom Component'
 	},
 	bottomText: {
 		type: 'string',

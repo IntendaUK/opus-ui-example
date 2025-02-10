@@ -2,10 +2,8 @@
 import { loadApp, registerComponentTypes } from '@intenda/opus-ui';
 
 //Custom Components
-import Label from './components/label';
-import propsLabel from './components/label/props';
-import Clicker from './components/clicker';
-import propsClicker from './components/clicker/props';
+import CustomComponent from './components/customComponent';
+import propsCustomComponent from './components/customComponent/props';
 
 //Plugins
 import '@intenda/vite-plugin-opus-hot-reload/src/hotReload';
@@ -15,13 +13,9 @@ import './main.css';
 
 //Custom Component Registration
 registerComponentTypes([{
-	type: 'label',
-	component: Label,
-	propSpec: propsLabel
-}, {
-	type: 'clicker',
-	component: Clicker,
-	propSpec: propsClicker
+	type: 'customComponent',
+	component: CustomComponent,
+	propSpec: propsCustomComponent
 }]);
 
 //Pure Opus UI Application
